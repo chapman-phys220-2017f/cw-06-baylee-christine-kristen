@@ -2,7 +2,7 @@
 
 **Author(s):** **CHANGEME**
 
-[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-06-YOURNAME.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-06-YOURNAME)
+[![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-06-baylee-christine-kristen.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-06-baylee-christine-kristen)
 
 ## Specification
 
