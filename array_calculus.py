@@ -9,10 +9,14 @@ import matplotlib.pyplot as plt
 
 def derivative(a,b,n):
     dx = (b-a)/(n-1)
-    D = (np.eye(n,n,1)-np.eye(n,n,-1))
-    D[0][0] = -2
-    D[-1][-1] = 2
-    D[0][1] = 2
-    D[-1][-2] = -2
-    D = D/(dx*2)
+    D=(1/2)*(np.eye(n+1,n+1,1)-np.eye(n+1,n+1,-1))
+    D[0][0] = -1
+    D[-1][-1] = 1
+    D[0][1] = 1
+    D[-1][-2] = -1
+    D = D/(dx)
     return D
+
+def second_derivative(a,b,n):
+    dx = (b-a)/(n-1)
+    D = np.eye(n,n,1)
