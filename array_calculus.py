@@ -19,4 +19,47 @@ def derivative(a,b,n):
 
 def second_derivative(a,b,n):
     dx = (b-a)/(n-1)
-    D = np.eye(n,n,1)
+    D2 = np.eye(n+1,n+1,0)*-2+np.eye(n+1,n+1,2)+np.eye(n+1,n+1,-2)
+    D2[0][0]=2
+    D2[0][1]=-4
+    D2[0][2]=2
+    D2[1][0]=2
+    D2[1][1]=-3
+    D2[1][3]=1
+    D2[-2][-1]=2
+    D2[-2][-2]=-3
+    D2[-2][-4]=1
+    D2[-1][-1]=2
+    D2[-1][-2]=-4
+    D2[-1][-3]=2
+    D2 = D2/((2*dx)**2)
+    return D2
+
+#generate arrays for x^2, sin, gaussian
+def gen_f_array(a,b,n):
+    x = np.linspace(a,b,n)
+    f = x**2
+    return x,f
+
+def gen_s_array(a,b,n):
+    x = np.linspace(a,b,n)
+    s = np.sin(x)
+    return x,s
+
+def gen_g_array(a,b,n):
+    x = np.linspace(a,b,n)
+    g = np.exp((-x**2)/2)/(np.sqrt(2*np.pi))
+    return x,g
+
+#make plot
+def plot(x,y,D,D2,title):
+    d1 = D@y
+    d2 = D2@y
+    plt.plot(x,y, "gray")
+    plt.plot(x,d1, "hotpink")
+    plt.plot(x,d2, "darkred")
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title(title, fontsize =20)
+    plt.legend(['function','first derivative','second derivative'])
+    plt.show()
