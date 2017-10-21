@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 # Name: Baylee Mumma, Christine Outlaw, Kristen Peet
 # Email: mumma103@mail.chapman.edu
 # Course: PHYS220/MATH220/CPSC220 Fall 2017
@@ -35,7 +37,6 @@ def second_derivative(a,b,n):
     D2 = D2/((2*dx)**2)
     return D2
 
-#generate arrays for x^2, sin, gaussian
 def gen_f_array(a,b,n):
     x = np.linspace(a,b,n+1)
     f = x**2
@@ -51,7 +52,6 @@ def gen_g_array(a,b,n):
     g = np.exp((-x**2)/2)/(np.sqrt(2*np.pi))
     return x,g
 
-#make plot
 def plot(x,y,D,D2,title):
     d1 = D@y
     d2 = D2@y
