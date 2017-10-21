@@ -1,6 +1,6 @@
 # PHYS220 CW 6
 
-**Author(s):** **CHANGEME**
+**Author(s):** Christine Outlaw, Baylee Mumma
 
 [![Build Status](https://travis-ci.org/chapman-phys220-2017f/cw-06-baylee-christine-kristen.svg?branch=master)](https://travis-ci.org/chapman-phys220-2017f/cw-06-baylee-christine-kristen)
 
@@ -19,7 +19,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have.
 
-**CHANGEME**
+Once we started thinking of the first derivative as an empty matrix that we filled using the forward, central, and backward difference formulas, it was much easier to think of the second derivative as a matrix as well.
 
 ## Honor Pledge
 
@@ -30,4 +30,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAME**
+Christine Outlaw, Baylee Mumma
