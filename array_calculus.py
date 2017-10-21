@@ -37,17 +37,17 @@ def second_derivative(a,b,n):
 
 #generate arrays for x^2, sin, gaussian
 def gen_f_array(a,b,n):
-    x = np.linspace(a,b,n)
+    x = np.linspace(a,b,n+1)
     f = x**2
     return x,f
 
 def gen_s_array(a,b,n):
-    x = np.linspace(a,b,n)
+    x = np.linspace(a,b,n+1)
     s = np.sin(x)
     return x,s
 
 def gen_g_array(a,b,n):
-    x = np.linspace(a,b,n)
+    x = np.linspace(a,b,n+1)
     g = np.exp((-x**2)/2)/(np.sqrt(2*np.pi))
     return x,g
 
