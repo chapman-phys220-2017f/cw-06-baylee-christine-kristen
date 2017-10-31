@@ -59,7 +59,7 @@ def second_derivative(a,b,n):
     D2 = D2/((2*dx)**2)
     return D2
 
-def gen_f_array(a,b,n):
+def gen_f_array(a,b,n):               ### The tests are failing due to the extra indent space in the line below this one
      """gen_f_array(a, b, n=1000)
     Generate a discrete approximation of y = x^2, including its
     domain and range, stored as a pair of numpy arrays.
